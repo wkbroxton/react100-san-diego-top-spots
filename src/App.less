@@ -6,9 +6,26 @@ html {
     text-align: center;
 }
 
-.heading {
-    border: 2px solid black;
+.whiteout {
+    padding-top: 2em;
+    width: 100vw;
+    position: sticky;
+    top: 0em;
+    margin-top: 0%;
+    background-color: rgb(207, 204, 204);
+    z-index: 9;
+    opacity: 1;
 }
+
+.ttop {
+    padding: 1rem;
+    border: 2px solid black;
+    margin-top: .25em;
+    margin-bottom: 0%;
+    z-index: 10;
+    background-color: white;
+}
+
 
 
 h2 {
@@ -19,7 +36,7 @@ h2 {
     margin-bottom: .4em;
 }
 
-h5 {
+h5, p {
     color: rgb(115, 109, 109);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -30,4 +47,36 @@ h5 {
 hr {
     color: black;
     font-size: xx-large;
+}
+
+.spots {
+    border: 1px solid black;
+    margin: 1.75em 1em;
+}
+
+.spots >h4 {
+    font-size: 2em;
+}
+
+
+.spots:hover {
+    background-color: rgb(204, 187, 187);
+    transition: background-color 0.5s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+        0 2px 4px rgba(0,0,0,0.07), 
+        0 4px 8px rgba(0,0,0,0.07), 
+        0 8px 16px rgba(0,0,0,0.07),
+        0 16px 32px rgba(0,0,0,0.07), 
+        0 32px 64px rgba(0,0,0,0.07);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
